@@ -1,0 +1,25 @@
+{
+	"name": "stylemix/laravel-translations",
+	"description": "Translations module",
+	"type": "library",
+	"require": {
+		"php": ">=7.0.0",
+		"konekt/concord": "^1.3",
+		"symfony/intl": "^4.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Stylemix\\Translations\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Stylemix\\Translations\\Providers\\TranslationsServiceProvider"
+			]
+		},
+		"console": [
+			"src/resources/console/module.js"
+		]
+	}
+}
